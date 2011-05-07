@@ -1,0 +1,242 @@
+#comments_list pre,
+#comments_list code,
+#post_comment code {
+  font-family:Consolas, "Lucida Console", monospace;
+}
+#comments_list pre,
+#postresult pre {
+  white-space:pre-wrap;
+}
+#post_comment fieldset {
+  border:1px solid #999;
+  background-color:#EFEFEF;
+  padding:1.2em 1.2em 0 1.2em;
+  margin:1.4em 0;
+  position:relative;
+}
+#post_comment legend {
+  margin-left:1em;
+  padding:0.2em 0.5em;
+  border:1px solid #999;
+  font-weight:bold
+}
+#post_comment input,
+#post_comment textarea {
+  width:40%;
+  float:left;
+  padding:2px;
+}
+#dud {
+  display:none
+}
+#post_comment textarea {
+  height:14em;
+  min-width:14em
+}
+#post_comment fieldset > label {
+  margin-bottom:0.8em;
+  font-weight:bold;
+  font-size:0.8em;
+  vertical-align:top;
+  width:8em;
+  float:left;
+  clear:left
+}
+#post_comment small {
+  margin-left:1.8em;
+  color:#FF7D33;
+  float:left
+}
+#post_comment ul {
+  margin-top:1.5em;
+  float:left
+}
+#post_comment li {
+  list-style:none;
+  font-size:0.8em;
+  border:0
+}
+#post_comment li code {
+  font-weight:bold;
+}
+#post_comment ul ~ input {
+  clear:left;
+  width:auto;
+  margin:12px 0 0 104px; /* em seem to compute to something bigger in IE */
+}
+#post_comment #remember {
+  clear:none;
+  margin-left:3em;
+}
+#post_comment ul ~ input + label {
+  width:auto;
+  clear:none;
+  margin:12px 0 0 0.4em;
+}
+#post_comment input[name="submit"] {
+  font-weight:bold;
+}
+#post_comment input[name="preview"] {
+  margin-left:1em;
+  clear:none;
+}
+#post_comment .commentator-preview {
+  background:#FFF;
+  border:1px solid #CCC;
+  border-width:1px 0;
+  margin:1em -1.2em; /* fieldset has padding */
+  padding:0.4em 1.2em;
+}
+#comments_list {
+  margin-bottom:0.4em;
+}
+#comments_list li {
+  list-style:none;
+  clear:left;
+  margin:0.5em 0;
+  padding:0.5em 1em;
+}
+#comments_list.manage li {
+  margin-left:2em
+}
+#comments_list h3 {
+  border-bottom:1px solid #DDD;
+  overflow:auto;
+  font-weight:normal;
+  font-size:0.8em;
+  line-height:28px;
+  margin:0 0 0.2em;
+  padding-bottom:2px;
+}
+#comments_list cite ~ span {
+  margin:0 1.4em;
+  color:#888;
+}
+#comments_list span.notify::before {
+  content:"\2713";
+  margin-right:5px;
+  font-family:"Arial Unicode MS","Microsoft Sans Serif","Free Sans","Gentium Plus","Gentium Basic","Gentium","GentiumAlt","DejaVu Sans","DejaVu Serif","Free Serif","TITUS Cyberbit Basic","Bitstream Cyberbit","Bitstream CyberBase","Doulos SIL";
+}
+#comments_list cite {
+  font-style:normal;
+  font-weight:bold;
+  font-size:1.6em;
+  color:#303E19;
+  margin-right:0 1em;
+}
+#comments_list cite + a {
+  font-size:0.85em;
+  display:block;
+  clear:left;
+}
+#comments_list .author-comment {
+  margin-left:2em;
+  border-left:4px solid #009;
+ }
+#comments_list .spam {
+  background-color:#F4F4F4;
+  border:2px solid #888
+}
+#comments_list .spam cite {
+  padding-right:3.6em;
+  background:transparent url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAMCAIAAACfoWgaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE3UlEQVR4nCXBe2yV5R0H8O/3ed7nvZxzemwPtFLS1p5CG6gmEyxTNiRseAfqxlwFohMv0TCjmTFmW3brMjJ1SryQzVu8xIFT48SAMm3i/RYFo0VqqYADKdiew2l7ej/nvM/z2x/7fEgVACCkcb6eO8eFga1UdL6ghvKSTiFT7QABhSCBSozRMT02LhUrhFQluXypIWTfl7YwJiSjEAubJEpYAuWK7j+sZssiIskIbVlWJakg+TF1+FjsAQgM1lysb7kO9fP1xKQKA46Py67dOkqqrp+WlHJKU5yiyOyMHDnK3Xv1Kz1xOZaudfpvfywD7N5mHvtnpVR2TfVm+904e5EFMTkuW37jv/5OmZQLz9fb74nn1Yl1audL3p/utSD9NauDQ5+YE195N22Ozl4cXbQqfPvVaODT4NKLgr5PjCvi5IC6dkOw6ergiw9Dm+Ngr1mxLJFt8t940a/k4XLsey9saYoAk4jM1T/x49O0BVRyfHp7MgxD35hH7otsjnGBA/u81SsDzyPSVf6j2yKbVwfe81ubI60DKn9ZR+LO26uaz9I9u4wdxaF9Xn1dROifr41snm4Y9/85/OXmIH/Y9LwS2hztMO/vTisdAF57q4lHVFyEHePh/eZHK1Jt2UTxmLEFxqOq9wNzzuKAUEopGOOgpLnF3rdV7rpVdXV6pSn5x2OVcokQihCgCKm4oMUREHJmRq9fy96DuvtuOX7KI7F+XamlwQAQgXNqaMgvldHY4FatsNdfAysyfNqjwAN9zwipJqdk4Ahny0xV2c7O2e4/lB7eVtr5VPzbO5TvQyhQ0B5aW3jbzf6WG50Qvf3+8W/RscS+9joO9tvdezWIeXWVK9eAJARw7HnLH8ppE7iNXfEvNlY+P+Dt/4wQURTPEKK8OMbjz0pVdbT+ylKmBmdUSW2drT3TtrfbcjlSqqyUZFviXS/K5ASGT6vndkWPP+W6fy2+b3+2Tq28wMxvsFYYhq7zssrLewwZU1zfwXhk1NyxxS7IxtNT6pEn/c4rLJxoDWOEpBeGXNDI5/4lL+8OW7KuqUFWrbAXr45D3y1dKiAA5PPqL/d6A0fk6Dc8MVipzfAHy+TksJcbF/jxYE7VDHotDZVFra5jie4fAAitueMF3rDJq07FX/WbDz62ay+BArUH3wdIr7kRD2zl6JhcdZP94oAj8fY7uv5MdiwpTU0znQYcJorYsxcnTjkAEFl+nkmZyt93mCd3xgKKuOs26t//Ss3N2B8uM4MnFRAHBkeP2j3/8Tattzuex3QJ1lJElHKBB3FQE5MYHsEll1a679LnfY/trfL9Ja65wX035L35rp6bIYlEAm0L6WkAbKhXm7us77tjx5nLY2hIcjnp7ZXZGSFd5+Xx6gupgJXL2ZblPQ/K77ZWvfQqG+uxsBkAaqrRca6kkuJ9N4y/PiQjRbNxQ7xpA2dmdCYjfQPqiWdUKilO+GWfsTFXXqD2fcbxSVmQNWGEr//L5kb4hjNOAMyrMwcPqSBwzuHHq/DRfmOCuH1RuOPfs/1fz5BY3OaNT6PnfSPCdFpSCZAqEJGaapXNsnaOS0QsFGTwlB48ac9IY+4cIUWExSKHc846SSbVvFp4msVx5goOYhWYSjNTQ5KC/6M4FEY4MeUoClBhZDMZKJKipqcxUoz/B1CwTGmVU29mAAAAAElFTkSuQmCC") no-repeat center right;
+}
+#comments_list li h3 img {
+  float:left;
+  margin-right:1em;
+  border:1px solid #FFF;
+}
+#comments_list p:last-child {
+  font-size:0.7em;
+  font-style:italic;
+  color:#888;
+}
+#comments_list p:last-child a {
+  font-style:normal;
+}
+#comments_list input {
+  float:left;
+  margin:0.4em 0 0 -3em
+}
+#comments_list ~ span {
+  margin-left:1.4em;
+}
+.commentator_message {
+  border:2px solid black;
+  overflow:auto;
+  background:#EFEFEF;
+  padding:0.4em 1em;
+  margin:1em 4em;
+}
+.commentator_message fieldset {
+  border:0;
+  margin:1.4em 0 0.8em 0.8em;
+  padding:0
+}
+.commentator_message fieldset * {
+  float:none;
+  margin:0;
+  vertical-align:middle
+}
+.commentator_message legend,
+#comments_list label {
+  display:none;
+}
+.commentator_message input {
+  width:auto;
+}
+.commentator-tools, .commentator-pagination {
+  margin:0 0 0.4em;
+  text-align:center;
+  overflow:auto;
+}
+.commentator-tools {
+  text-align:right;
+  float:right;
+}
+.commentator-tools a, .commentator-pagination a {
+  margin:0 0.7em;
+}
+.commentator-pagination > span {
+  float:left;
+  padding:0;
+  margin:0 1em;
+}
+.commentator-pagination > span.linkwithin {
+  border-right:1px solid black;
+  margin-right:0;
+}
+.commentator-pagination > span + span.linkwithin {
+  border-left:1px solid black;
+  border-right:0;
+  margin-left:0;
+}
+.commentator-pagination > span a {
+  margin:0 1em;
+}
+#commentator_login {
+  float:right;
+  clear:both;
+  height:1.8em;
+  margin:0 -0.6em 0;
+}
+#commentator_login > label {
+  width:auto;
+  margin:0.4em 0.4em 0 0;
+  
+}
+#commentator_login a {
+  color:#CCC;
+  border:0;
+  font-size:0.8em;
+  font-weight:bold;
+}
+#commentator_login input {
+  width:auto;
+  float:none;
+  margin-right:0.2em;
+}
+#post_comment fieldset #postresult:target,
+#comments_list #postresult:target ~ *:not(:last-child) {
+  background:#FFF url("data:image/gif;base64,R0lGODlhAQABALMOAP//Nv//QP//dP//Nf//sP//Ov//z///TP//kP//Xv//6v//NP//////M////wAAACH5BAUAAA4ALAAAAAABAAEAAAQCsEUAIfkEBQAADgAsAAAAAAEAAQAABALQRQAh+QQFAAAOACwAAAAAAQABAAAEAtBFACH5BAUAAA4ALAAAAAABAAEAAAQC0EUAIfkEBQAADgAsAAAAAAEAAQAABALQRQAh+QQFAAAOACwAAAAAAQABAAAEAtBFACH5BAUAAA4ALAAAAAABAAEAAAQCcEUAIfkEBQAADgAsAAAAAAEAAQAABALQRQAh+QQFAAAOACwAAAAAAQABAAAEAnBEACH5BAUAAA4ALAAAAAABAAEAAAQCEEQAIfkEBQAADgAsAAAAAAEAAQAABAKwRAAh+QQFAAAOACwAAAAAAQABAAAEAjBEACH5BAUAAA4ALAAAAAABAAEAAAQC8EQAIfkEBQAADgAsAAAAAAEAAQAABAIwRQAh+QQFAAAOACwAAAAAAQABAAAEAlBEACH5BAUAAA4ALAAAAAABAAEAAAQCEEUAIfkEBQAADgAsAAAAAAEAAQAABAKQRAAh+QQFAAAOACwAAAAAAQABAAAEAtBEACH5BAUAAA4ALAAAAAABAAEAAAQCUEUAIfkEBQAADgAsAAAAAAEAAQAABALQRQAh+QQFAAAOACwAAAAAAQABAAAEApBFACH5BAUAAA4ALAAAAAABAAEAAAQC0EUAOw==");
+}
