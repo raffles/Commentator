@@ -1,4 +1,4 @@
-<?php  /* Commentator 0.7.5 (c) 2009-2011 R Holt ( ratherodd.com )  */
+<?php  /* Commentator 0.7.5 (c) 2009-2011 R Holt ( http://ratherodd.com/commentator/ )  */
 
 $akismet_file = 'Akismet.class.php';                          // path to the Akismet class. Set this to false if you don't want to use it.
 $wpAPIkey = 'xxxxxxxxxx';                                     // your WordPress API key. Needed for Akismet to work. Get it at akismet.com
